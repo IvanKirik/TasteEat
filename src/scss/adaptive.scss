@@ -1,0 +1,497 @@
+
+
+@media screen and (max-width: 1385px) {
+  .popular-menu {
+    .container {
+      .popular-menu-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px
+      }
+    }
+  }
+
+  .offers {
+    .container {
+      .offer-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px
+      }
+    }
+  }
+  .blog {
+    .container {
+      .blog-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+    }
+  }
+  .testimonials {
+    .container {
+      .slider {
+        .slid-item {
+          width: 440px !important;
+        }
+      }
+    }
+  }
+  .contact {
+    .container {
+      .contact-hours {
+        .form-email {
+          form {
+            input {
+              width: 265px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .offer {
+    .container {
+      flex-wrap: wrap;
+      gap: 30px
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .main {
+    .container {
+      .main-tittle {
+        .tittle {
+          font-size: 75px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .footer {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .story {
+    .container {
+      flex-wrap: wrap;
+      gap: 50px;
+      .story-text {
+        .story-text-year {
+          justify-content: left;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  %description-adaptive {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+  }
+  .menu {
+    .container {
+      .menu-items {
+        ul {
+          max-width: 600px;
+        }
+      }
+    }
+  }
+  .main {
+    .container {
+      .main-tittle {
+        .tittle {
+          font-size: 60px;
+          line-height: 75px;
+        }
+        .description {
+          @extend %description-adaptive;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  .contact {
+    .container {
+      .contact-hours {
+        .form-email {
+          form {
+            input {
+              display: block;
+              width: 100%;
+              margin-bottom: 30px;
+            }
+            button {
+              display: block;
+              width: 100%;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1065px) {
+  .header {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px
+    }
+  }
+  .main {
+    .container {
+      .main-image{
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .main {
+    .container {
+      .main-tittle {
+        margin-top: 70px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1040px) {
+  .location {
+    .container {
+      .locate-hours-reservation {
+        .location-item-text {
+            .text {
+              .text-tittle {
+                font-size: 25px;
+              }
+              .text-description {
+                font-size: 15px;
+              }
+            }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1015px) {
+  .menu-dishes {
+    .container {
+      .menu-section {
+        flex-wrap: wrap;
+        gap: 30px
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .location {
+    .container {
+      .locate-hours-reservation {
+        .location-item-text {
+          .location-items {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+  .menu-dishes {
+    padding-bottom: 100px;
+  }
+  .block-form {
+    .container {
+      .form-container {
+        padding: 140px 100px 155px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 901px) {
+  .menu {
+    .container {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 26px
+    }
+  }
+  .main {
+    .container {
+      .main-tittle {
+        margin-top: 10px;
+      }
+    }
+  }
+  .block-form {
+    .container {
+      .form-container {
+        padding: 140px 40px 155px;
+      }
+    }
+  }
+  .contact {
+    .container {
+      .contact-hours {
+        .form-email {
+          display: none;
+        }
+        .contact-item {
+          margin-top: unset;
+          p {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .offer {
+    .container {
+      .offer-items {
+        .offer-item {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .location {
+    .container {
+      .locate-hours-reservation {
+        .location-item-text {
+          .text {
+            .text-tittle {
+              font-size: 20px;
+            }
+            .text-description {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .location {
+    padding: 30px 0;
+    .container {
+      .locate-hours-reservation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+    }
+  }
+  .story {
+    padding: 0 0 125px;
+  }
+  .contact {
+    .container {
+      .contact-social {
+        .social {
+          width: unset;
+          .instagram {
+            text-align: end;
+            margin: 5px 0;
+            display: block;
+          }
+          .facebook  {
+            text-align: end;
+            margin: 5px 0;
+          }
+          .rambler {
+            text-align: end;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+    .block-form {
+      .container {
+        .form-container {
+          padding: 140px 15px 155px;
+          #form {
+            .big {
+              width: 100%;
+            }
+            .little {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+
+
+  .story {
+    .container {
+      justify-content: center;
+      .story-img {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .offer {
+    .container {
+      justify-content: center;
+      .offer-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: unset;
+      }
+    }
+  }
+}
+@media screen and (max-width: 730px) {
+  .main {
+    padding-bottom: 30px;
+    .container {
+      .main-image {
+        display: none;
+      }
+      .main-tittle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tittle {
+          max-width: unset;
+          text-align: center;
+        }
+        .description {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .contact {
+    padding-top: 100px;
+    .container {
+      .contact-social {
+        justify-content: center;
+        .hashteg {
+          display: none;
+        }
+        .social {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .blog {
+    .container {
+      .blog-items {
+        .blog-item {
+          .blog-item-img {
+            width: unset;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    justify-content: center;
+    .text {
+      text-align: center;
+    }
+  }
+  .offers {
+    .container {
+      .offer-items {
+        .offer-item {
+          padding: 67px 10px 45px;
+          .offer-item-text {
+            .offer-going {
+              font-size: 12px;
+            }
+            .tittle {
+              font-size: 34px;
+            }
+            .description {
+              font-size: 14px;
+            }
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .menu {
+    .container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .burger {
+        display: flex;
+        order: 2;
+      }
+      .menu-items {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 30%;
+        height: 100%;
+        background-color: rgba(92, 97, 104, 0.6);
+        top: 0;
+        right: 0;
+        ul {
+          flex-direction: column;
+          height: 375px;
+          align-items: self-end;
+          width: unset;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  .testimonials {
+    .container {
+      .slider {
+        .slid-item {
+          padding-right: unset;
+          padding-left: unset;
+
+          .slid-description {
+            width: unset;
+          }
+        }
+      }
+    }
+  }
+}

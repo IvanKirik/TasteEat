@@ -1,0 +1,36 @@
+.slick-slider {
+  .slick-dots {
+    li {
+      &.slick-active {
+        background: #FFFFFF;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+      button {
+        &::before {
+          content: '';
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #FFFFFF66;
+        }
+      }
+    }
+  }
+  .slick-list {
+    .slick-track {
+      .slick-slide {
+        width: 665px;
+        div {
+          .slid-item {
+            width: 544px;
+          }
+        }
+      }
+      .slick-cloned {
+        width: 665px;
+      }
+    }
+  }
+}
