@@ -1,4 +1,4 @@
-
+@import "theme";
 
 @media screen and (max-width: 1385px) {
   .popular-menu {
@@ -454,11 +454,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      .burger {
-        display: flex;
-        order: 2;
+      .menu-mobile {
+        display: block;
       }
       .menu-items {
+        z-index: 55;
+
         display: none;
         align-items: center;
         justify-content: center;
@@ -479,7 +480,7 @@
     }
   }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 500px) {
   .testimonials {
     .container {
       .slider {
@@ -489,6 +490,202 @@
 
           .slid-description {
             width: unset;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 610px) {
+  %container {
+    max-width: 1440px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 455px) {
+  %tittle {
+    font-family: 'Cormorant Infant', sans-serif;
+    font-size: 30px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: $bgc1;
+  }
+  %description {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #555555;
+  }
+  .header {
+    .container {
+      .header-logo {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .offer {
+    .container {
+      .offer-text {
+        .tittle {
+          color: #FFFFFF;
+        }
+        .description {
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+  .testimonials {
+    .container {
+      .tittle {
+        color: #FFFFFF;
+      }
+      .description{
+        color: #FFFFFF;
+      }
+      .slider {
+        .slid-item {
+          .slid-description {
+            font-size: 16px;
+            line-height: 30px;
+            width: 355px;
+            padding-left: 15px;
+          }
+          .img-tittle {
+            .name-city {
+              .name {
+                color: #FFFFFF;
+              }
+              .city {
+                color: $colorGold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .images-block {
+    height: 440px;
+  }
+  .story {
+    padding-bottom: 30px;
+  }
+  .menu-dishes {
+    padding: 80px 0;
+    .container {
+      .menu-section {
+        .menu-img {
+          .images {
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .menu-items {
+          .menu-item {
+            .item {
+              margin-bottom: 30px;
+              .img-tittle {
+                .tittle-description {
+                  .tittle {
+                    line-height: 40px;
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+  .contact {
+    .container {
+      .contact-hours {
+        .contact-item {
+          .block-tittle {
+            margin-bottom: 10px;
+          }
+          .text {
+            text-align: unset;
+            p {
+              color: #FFFFFF;
+            }
+          }
+        }
+        .working-hours {
+          .block-tittle {
+            margin-left: unset;
+            margin-bottom: 10px;
+          }
+          .text {
+            text-align: unset;
+            p {
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+      .contact-social {
+        .logo {
+          margin-bottom: 20px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .text {
+      color: #FFFFFF;
+    }
+    .license {
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu {
+    .container {
+      .menu-items {
+        ul {
+          li {
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonials {
+    padding: 80px 0;
+  }
+  .offers {
+    padding: 80px 0;
+  }
+  .popular-menu {
+    padding-bottom: 80px;
+    padding-top: 40px;
+  }
+  .blog {
+    padding: 80px 0;
+    .container {
+      .blog-items {
+        .blog-item {
+          padding-bottom: unset;
+          .blog-item-text {
+            margin: unset;
+            padding: 10px;
           }
         }
       }

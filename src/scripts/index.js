@@ -15,6 +15,28 @@ $('.slider').slick({
     ]
 });
 
+//открываем меню на мобильной версии
+let menuMobile = $('#menu-mobile');
+let menu = $('.menu-items');
+
+menuMobile.click(function () {
+    menu.css({
+        display: 'flex',
+    })
+    menuMobile.hide();
+})
+
+$(document).mouseup(function (e) {
+    if (!menu.is(e.target)  && menu.has(e.target).length === 0) {
+        menu.css({
+            display: 'none',
+        })
+        menuMobile.show();
+    }
+})
+
+
+
 //включаем слик при конкретной ширине экрана
 
 // window.addEventListener("resize", function() {

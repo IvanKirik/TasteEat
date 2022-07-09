@@ -114,7 +114,17 @@
     @extend %container;
     display: flex;
     justify-content: space-between;
+    .menu-mobile {
+      display: none;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
 
+      &:hover {
+        color: $colorGold;
+      }
+    }
     .menu-items {
       ul {
         width: 765px;
@@ -542,7 +552,7 @@
   }
 }
 
-.images {
+.images-block {
   height: 600px;
   background-image: url("../images/big-image.png");
   background-repeat: no-repeat;
@@ -1167,44 +1177,6 @@
   }
 }
 
-
-
-//бургер меню
-#checkbox {
-  display: none;
-}
-.burger {
-  position: relative;
-  padding: 20px;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.line {
-  position: absolute;
-  width: 21px;
-  height: 2px;
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  transition: transform .25s, opacity .35s;
-}
-.line-top {
-  transform: translateY(-7px);
-}
-.line-bottom {
-  transform: translateY(7px);
-}
-#checkbox:checked~.line-top {
-  transform: rotate(45deg);
-}
-#checkbox:checked~.line-middle {
-  transform: translateX(16px);
-  opacity: 0;
-}
-#checkbox:checked~.line-bottom {
-  transform: rotate(-45deg);
-}
 
 @import "adaptive";
 
