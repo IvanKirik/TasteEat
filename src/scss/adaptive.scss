@@ -686,6 +686,29 @@
           .blog-item-text {
             margin: unset;
             padding: 10px;
+            .tittle {
+              font-size: 28px;
+            }
+            .big-tittle {
+              span {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .block-form {
+    padding: 55px 0;
+  }
+  .offers {
+    .container {
+      .offer-items {
+        .offer-item {
+            flex-direction: column;
+          .offer-item-img {
+            margin-top: 12px;
           }
         }
       }

@@ -26,14 +26,16 @@ menuMobile.click(function () {
     menuMobile.hide();
 })
 
-$(document).mouseup(function (e) {
-    if (!menu.is(e.target)  && menu.has(e.target).length === 0) {
-        menu.css({
-            display: 'none',
-        })
-        menuMobile.show();
-    }
-})
+    $(document).mouseup(function (e) {
+        if (!menu.is(e.target)  && menu.has(e.target).length === 0) {
+            menu.css({
+                display: 'none',
+            })
+            menuMobile.show();
+        }
+    })
+
+
 
 
 //Плавный скролл
