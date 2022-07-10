@@ -20,12 +20,6 @@
 </header>
 <menu class="menu">
     <div class="container">
-        <label for="checkbox" class="burger">
-            <input type="checkbox" id="checkbox">
-            <span class="line line-top"></span>
-            <span class="line line-middle"></span>
-            <span class="line line-bottom"></span>
-        </label>
         <div class="menu-items">
             <ul>
                 <li><a href="#main">Home</a></li>
@@ -71,6 +65,9 @@
                           fill="white"/>
                 </svg>
             </a>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            Menu
         </div>
     </div>
 </menu>
@@ -450,7 +447,7 @@
 
     </div>
 </section>
-<section class="images"></section>
+<section class="images-block"></section>
 <section class="offers">
     <div class="container">
         <div class="block-tittle">
@@ -498,56 +495,7 @@
             There is a game between the waiters in restaurant to see who serves the food to each table fastest. That led
             to attempting the Guinness Record.
         </div>
-        <div class="popular-menu-items">
-            <div class="popular-menu-item">
-                <div class="item-img">
-                    <img src="images/popular_menu/1.png" alt="Курочка">
-                </div>
-                <div class="name-price">
-                    <div class="name">Chicken Manjoori</div>
-                    <div class="price">$15</div>
-                </div>
-                <div class="item-description">
-                    Dish relished by all age groups as a starter dish at parties.
-                </div>
-            </div>
-            <div class="popular-menu-item">
-                <div class="item-img">
-                    <img src="images/popular_menu/2.png" alt="Курочка">
-                </div>
-                <div class="name-price">
-                    <div class="name">Hotdog</div>
-                    <div class="price">$10</div>
-                </div>
-                <div class="item-description">
-                    Grilled sausage served in the slit of a partially sliced bun.
-                </div>
-            </div>
-            <div class="popular-menu-item">
-                <div class="item-img">
-                    <img src="images/popular_menu/3.png" alt="Курочка">
-                </div>
-                <div class="name-price">
-                    <div class="name">Fresh Salmon</div>
-                    <div class="price">$5</div>
-                </div>
-                <div class="item-description">
-                    Beat the health blues with our Super Immune Blue Juice Recipe.
-                </div>
-            </div>
-            <div class="popular-menu-item">
-                <div class="item-img">
-                    <img src="images/popular_menu/4.png" alt="Курочка">
-                </div>
-                <div class="name-price">
-                    <div class="name">Veg Burger</div>
-                    <div class="price">$10</div>
-                </div>
-                <div class="item-description">
-                    Burgers may be made from ingredients like beans.
-                </div>
-            </div>
-        </div>
+        <div class="popular-menu-items"></div>
         <div class="menu-button">
             <button>See all dishes</button>
         </div>
@@ -663,7 +611,7 @@
                 <input type="text" class="input little form-control" id="date" name="date" placeholder="Date">
             </form>
             <div class="button">
-                <button id="button-book">Book A Table</button>
+                <button type="submit" id="button-book">Book A Table</button>
             </div>
         </div>
     </div>
