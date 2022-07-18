@@ -66,105 +66,117 @@
   padding-top: 4px;
 }
 
+.header-menu {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .header {
+    background: $bgc1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #5C6168;
+    //position: sticky;
+    //top: 0;
+    //z-index: 600;
 
-.header {
-  background: $bgc1;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #5C6168;
 
-  .container {
-    @extend %container;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .container {
+      @extend %container;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    .header-call {
-      width: 295px;
-      padding: 20px 0 20px 0;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 22px;
-      color: white;
-      border: $colorGold solid 2px;
-      text-align: center;
-      cursor: pointer;
-    }
+      .header-call {
+        width: 295px;
+        padding: 20px 0 20px 0;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        color: white;
+        border: $colorGold solid 2px;
+        text-align: center;
+        cursor: pointer;
+      }
 
-    a {
-      width: 295px;
-      padding: 20px 0 20px 0;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 22px;
-      color: black;
-      border: $colorGold solid 2px;
-      text-align: center;
-      background: $colorGold;
-      cursor: pointer;
-      text-decoration: none;
-    }
-  }
-}
-
-.menu {
-  background: $bgc1;
-  padding-bottom: 26px;
-  padding-top: 26px;
-
-  .container {
-    @extend %container;
-    display: flex;
-    justify-content: space-between;
-    .menu-mobile {
-      display: none;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 20px;
-      color: white;
-      cursor: pointer;
-
-      &:hover {
-        color: $colorGold;
+      a {
+        width: 295px;
+        padding: 20px 0 20px 0;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 22px;
+        color: black;
+        border: $colorGold solid 2px;
+        text-align: center;
+        background: $colorGold;
+        cursor: pointer;
+        text-decoration: none;
       }
     }
-    .menu-items {
-      ul {
-        width: 765px;
+  }
+
+  .menu {
+    background: $bgc1;
+    padding-bottom: 26px;
+    padding-top: 26px;
+    //position: sticky;
+    //top: 293px;
+    //z-index: 600;
+
+    .container {
+      @extend %container;
+      display: flex;
+      justify-content: space-between;
+      .menu-mobile {
+        display: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: $colorGold;
+        }
+      }
+      .menu-items {
+        ul {
+          width: 765px;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            list-style: none;
+
+            a {
+              text-decoration: none;
+              font-family: "Josefin Sans", sans-serif;
+              font-size: 20px;
+              color: white;
+              cursor: pointer;
+
+              &:hover {
+                color: $colorGold;
+              }
+            }
+          }
+        }
+      }
+
+      .menu-social {
+        width: 179px;
         display: flex;
         justify-content: space-between;
 
-        li {
-          list-style: none;
-
-          a {
-            text-decoration: none;
-            font-family: "Josefin Sans", sans-serif;
-            font-size: 20px;
-            color: white;
+        a {
+          svg {
             cursor: pointer;
 
-            &:hover {
-              color: $colorGold;
+            &:hover path {
+              fill: $colorGold;
             }
           }
         }
       }
     }
-
-    .menu-social {
-      width: 179px;
-      display: flex;
-      justify-content: space-between;
-
-      a {
-        svg {
-          cursor: pointer;
-
-          &:hover path {
-            fill: $colorGold;
-          }
-        }
-      }
-    }
   }
+
 }
 
 .main {

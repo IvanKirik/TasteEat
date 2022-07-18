@@ -107,6 +107,35 @@ button.click(function () {
 })
 
 
+// let scrollPos = 0;
+// $(window).scroll(function(){
+//     let st = $(this).scrollTop();
+//     if (st > scrollPos){
+//         header.css({
+//             display: 'none'
+//         })
+//         console.log('Вниз');
+//     } else {
+//         header.css({
+//             display: 'block'
+//         })
+//         console.log('Вверх');
+//     }
+//     scrollPos = st;
+// });
+
+// window.addEventListener('scroll', progressBar);
+//
+// function progressBar(e) {
+//     let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+//     let second = $('.second');
+//     if (windowScroll > 935) {
+//         second.css('display', 'block');
+//         $('.header').css('display', 'none');
+//     }
+// }
+
+
 
 
 
