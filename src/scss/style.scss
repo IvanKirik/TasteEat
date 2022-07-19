@@ -67,17 +67,11 @@
 }
 
 .header-menu {
-  position: sticky;
-  top: 0;
-  z-index: 100;
   .header {
     background: $bgc1;
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #5C6168;
-    //position: sticky;
-    //top: 0;
-    //z-index: 600;
 
 
     .container {
@@ -565,11 +559,12 @@
 }
 
 .images-block {
-  height: 600px;
-  background-image: url("../images/big-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  min-height: 400px;
+  background: transparent;
+  //background-image: url("../images/big-image.png");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: cover;
 }
 
 .offers {

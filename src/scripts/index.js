@@ -1,3 +1,11 @@
+//Parallax
+// $('.images-block').parallax(
+//     {imageSrc: 'images/big-image.jpg'}
+// );
+
+
+
+
 //Слик-слайдер
 $('.slider').slick({
     slidesToShow: 2,
@@ -15,6 +23,7 @@ $('.slider').slick({
     ]
 });
 
+
 //открываем меню на мобильной версии
 let menuMobile = $('#menu-mobile');
 let menu = $('.menu-items');
@@ -26,6 +35,7 @@ menuMobile.click(function () {
     menuMobile.hide();
 })
 
+if ($(window).width() < 610) {
     $(document).mouseup(function (e) {
         if (!menu.is(e.target)  && menu.has(e.target).length === 0) {
             menu.css({
@@ -34,6 +44,8 @@ menuMobile.click(function () {
             menuMobile.show();
         }
     })
+}
+
 
 
 
